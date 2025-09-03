@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Predict the Weather and adjust your Schedules:)</h1>
+    <img src="meteorology.png" alt="weather icon" width="200" height="200" />
+    <form id="form" class="center-form">
+      <label for="search">Location:</label>
+      <input
+        type="text"
+        id="search"
+        placeholder="Search by Location"
+        autocomplete="on"
+      /><br />
+      <!-- From Uiverse.io by catraco -->
+      <button type="submit" class="btn-class-name" title="Click!">
+        <span class="back"></span>
+        <span class="front">Push Me!</span>
+      </button>
+    </form>
+    <main id="main"></main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

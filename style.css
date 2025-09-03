@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(300deg, #757b87, #909d9d);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+/* Smooth background transition */
+body {
+  transition: background 1s ease;
+}
+
+/* Weather-based backgrounds */
+body.sunny {
+  background: linear-gradient(to top, #fceabb, #f8b500);
+}
+
+body.cloudy {
+  background: linear-gradient(to top, #bdc3c7, #2c3e50);
+}
+
+body.rainy {
+  background: linear-gradient(to top, #00c6fb, #005bea);
+}
+
+body.stormy {
+  background: linear-gradient(to top, #232526, #414345);
+}
+
+body.snowy {
+  background: linear-gradient(to top, #e0eafc, #cfdef3);
+}
+
+input {
+  padding: 1rem;
+  border-radius: 25px;
+  border: none;
+  background-color: #fff;
+  font-family: inherit;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  min-width: 300px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+.weather {
+  text-align: center;
+  font-size: 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.weather h2 {
+  margin-bottom: 0.5rem;
+  color: lightslategray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.weather small {
+  font-size: 1.2rem;
+}
+
+.center-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+/* From Uiverse.io by catraco */
+.btn-class-name {
+  --primary: 255, 90, 120;
+  --secondary: 150, 50, 60;
+  width: 60px;
+  height: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+  outline: 10px solid rgb(var(--primary), 0.5);
+  border-radius: 100%;
+  position: relative;
+  transition: 0.3s;
+}
+
+.btn-class-name .back {
+  background: rgb(var(--secondary));
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-class-name .front {
+  background: linear-gradient(
+    0deg,
+    rgba(var(--primary), 0.6) 20%,
+    rgba(var(--primary)) 50%
+  );
+  box-shadow: 0 0.5em 1em -0.2em rgba(var(--secondary), 0.5);
+  border-radius: 100%;
+  position: absolute;
+  border: 1px solid rgb(var(--secondary));
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: inherit;
+  transform: translateY(-15%);
+  transition: 0.15s;
+  color: rgb(var(--secondary));
+}
+
+.btn-class-name:active .front {
+  transform: translateY(0%);
+  box-shadow: 0 0;
+}
+button {
+  margin-top: 20px; /* space below the input */
+  margin-bottom: 30px; /* space above the forecast */
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ff6666, #cc0000);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+image{
+  size: 50;
+  height: 50;
+  width:50;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* add spacing to forecast section */
+.weather {
+  margin-top: 30px;
+  color: darkslategray;
+}
