@@ -1,2 +1,1 @@
-# Weatherapp
-Realtime weather app
+🌦️ WeatherApp — A simple real-time weather application built with HTML, CSS, and JavaScript. It fetches live weather data through an API and displays weather information in a clean, responsive interface. This was one of my first web development projects, deployed online for real-world use.
